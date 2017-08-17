@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Registro</title>
+ 
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Iconos--> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" >
+    <link rel="stylesheet" href="../Registrarse/estilos.css">
+    
+  </head>
+
+  <body>
+      <header>
+        <nav class = "navbar navbar-inverse navbar-stactic-top" role = "navigation">
+            <div class = "container">
+                <div class = "navbar-header">         
+                    <button type="button" class ="navbar-toggle collapsed" data-toggle="collapse" data-target ="#navegacion-Wil">
+                        <span class= "sr-only" Desplegar / Ocultar Menu></span>
+                        <span class= "icon-bar"></span>
+                        <span class= "icon-bar"></span>
+                        <span class= "icon-bar"></span>
+                    </button>
+                   
+                </div>
+                
+                <!-- Inicia Menu -->
+                
+                <div class ="collapse navbar-collapse" id ="navegacion-Wil">
+            
+                    
+                    <a href="../PrincipalLogin/OpenFaceLogin.html" class="btn btn-lg btn-success" id="bntRegistrar" >Iniciar sesion</a>    
+                    
+                  </div>  
+             </div>
+        </nav>
+    </header>
+      
+    <div class="my-content" >
+        <div class="container" > 
+            <div class="row">
+                <div class="col-sm-12" >
+                  <h1><strong>OpenFacebook</strong> Formulario de Registro</h1>
+                  
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-sm-offset-3 myform-cont" >
+                    <div class="myform-top">
+                        <div class="myform-top-left">
+                          <h3>Regístrate en nuestra aplicaccion web.</h3>
+                            <p>Por favor ingresa tus datos personales:</p>
+                        </div>
+                        <div class="myform-top-right">
+                          <i class="fa fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="myform-bottom">
+                      <form role="form" action="" method="post" class="form-register" >
+                        <div class="form-group">
+                            
+                            <input type="text" name="form-firtsname" placeholder="Primer nombre..." class="form-control" id="form-firtsname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="form-lastname" placeholder="Primer apellido..." class="form-control" id="form-lastname">
+                        </div>
+                          <div class="myform-middle-genero">
+                            <h2 id = "generoTitulo">Genero</h2>
+                        </div>
+                          
+                        <div class="form-group">
+                            <input type="text" name="form-phone" placeholder="Telefono..." class="form-control" id="form-phone">
+                        </div>
+                          <div class="form-group">
+                            <input type="text" name="form-username" placeholder="Nombre de usuario..." class="form-control" id="form-user">
+                        </div>
+                          <div class="form-group">
+                            <input type="password" name="form-password" placeholder="Contraseña..." class="form-control" id="form-password">
+                        </div>
+                          <div class="form-group">
+                            <input type="password" name="form-passwordRepeat" placeholder="Repetir contraseña..." class="form-control" id="form-passwordRepeat">
+                        </div>
+                          
+                          <a href="#" class="btn btn-lg btn-success" id="bntRegistrar" onclick="validar();">Registrarme</a>    
+                          <a href ="../PrincipalLogin/OpenFaceLogin.html" class= "btn btn-lg btn-default">Cancelar</a>      
+                          
+                       <div class="form-genero">
+                                
+                                <form action="" class="formulario">
+			                         <div class="radio" id="form-genero">
+				                        
+ 
+				                            <input type="radio" name="sexo" id="hombre" value= "hombre" checked>
+				                                <label id = "hombre" for="hombre">Hombre</label>
+		
+				                            <input  type="radio" name="sexo" id="mujer" value = "mujer">
+				                                <label id = "mujer" for="mujer">Mujer</label>
+		
+				
+                                        </div>
+		
+		                          </form>
+                            </div>  
+                      </form>
+                    </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mysocial-login">
+                    <h3>...Siguenos en:</h3>
+                    <div class="mysocial-login-buttons" >
+                      <a class="mybtn-social" href="#">
+                      <i class="fa fa-facebook"></i> Facebook
+                      </a>
+                      <a class="mybtn-social" href="#">
+                      <i class="fa fa-twitter"></i> Twitter
+                      </a>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    <!-- Enlazamos el js de Bootstrap, y otros plugins que usemos siempre al final antes de cerrar el body -->
+    <!--<script src="../js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="registrarse.js"></script>
+  </body>
+</html>

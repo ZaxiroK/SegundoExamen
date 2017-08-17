@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    
+
+    <title>GrandChallenge PrincipalLogin</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../MenuPrincipal/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse navbar-stactic-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-Wil">
+                        <span class="sr-only" Desplegar / Ocultar Menu></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <!-- Inicia Menu -->
+                <div class="collapse navbar-collapse" id="navegacion-Wil">
+
+                    <label id="bienvenido" for="name  ">Bienvenido</label>
+                    <label id="usuario" for="name">Usuario</label>
+                    <a href="../PrincipalLogin/OpenFaceLogin.html" class="btn btn-lg btn-primary navbar-right" id="btnCerrarSesion">Cerrar Sesion</a>
+
+
+                    
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="my-content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 id="titulo1"><strong>Open</strong></h1>
+                    <h1 id="titulo2"><strong>Facebook</strong></h1>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 myform-cont">
+            <div class="myform-top">
+
+                <div class="myform-bottom">
+                       <div class="form-group"> 
+                            <input type="text" name="form-post" placeholder="postear..." class="form-control" id="form-post">
+                        </div>
+                    <a href="#" class="btn btn-lg btn-success" id="bntRegistrar" onclick="validar();">Postear</a>        
+                
+            </div>
+                <h2>Lista de post</h2>
+                    <table class = "table table-hover" id ="tblPost">
+                    <thead>
+                    <tr>
+                <th>Post</th>
+                <th>Autor</th>
+                <th>Editar</th>
+                <th>Borrar</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+
+        </div>
+    </div>
+        </div>
+       
+    <script language=j avascript>
+        traerUsuarioLogueado();
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+
+
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src= "MenuPrincipal.js"></script>
+</body>
+
+</html>
